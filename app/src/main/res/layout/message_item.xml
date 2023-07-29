@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/message_grand_parent"
+    android:padding="10dp"
+    android:gravity="right">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/message_parent"
+    android:orientation="vertical"
+    android:background="@drawable/button_background"
+    >
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:id="@+id/message_icon_recieved"
+       android:layout_alignParentLeft="true"
+
+
+       />
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:id="@+id/message_icon"
+       android:layout_alignParentRight="true"
+
+       />
+ </RelativeLayout>
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/message_message"
+      android:text="message1"
+      android:textStyle="italic"
+      android:textSize="20dp"
+
+      android:layout_marginRight="10dp"
+
+      android:layout_marginLeft="10dp"
+      />
+
+</LinearLayout>
+</LinearLayout>
